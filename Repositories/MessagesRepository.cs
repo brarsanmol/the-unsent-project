@@ -8,10 +8,17 @@ using The_Unsent_Project.Repositories.Interfaces;
 
 namespace The_Unsent_Project.Repositories
 {
+    /// <summary>
+    /// The implementation of IMessagesRepository.
+    /// This implementation uses EntityFramework.
+    /// </summary>
     public class MessagesRepository : IMessagesRepository
     {
+        /// <summary>
+        /// The database context to access messages.
+        /// </summary>
         private readonly ApplicationDbContext _context;
-
+        
         public MessagesRepository(ApplicationDbContext context)
         {
             _context = context;
