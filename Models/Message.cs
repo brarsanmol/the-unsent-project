@@ -4,17 +4,18 @@ using System.ComponentModel.DataAnnotations;
 namespace The_Unsent_Project.Models
 {
     /// <summary>
-    /// The model for messages.
+    ///     The model for messages.
     /// </summary>
     public record Message
     {
         /// <summary>
-        /// The message identifier.
+        ///     The message identifier.
         /// </summary>
-        [Key] public int Identifier { get; init; }
+        [Key]
+        public int Identifier { get; init; }
 
         /// <summary>
-        /// The person who the message was addressed to.
+        ///     The person who the message was addressed to.
         /// </summary>
         [Required]
         [DataType(DataType.Text)]
@@ -22,7 +23,7 @@ namespace The_Unsent_Project.Models
         public string To { get; init; }
 
         /// <summary>
-        /// The message.
+        ///     The message.
         /// </summary>
         [Required]
         [DataType(DataType.MultilineText)]
@@ -30,8 +31,9 @@ namespace The_Unsent_Project.Models
         public string Content { get; init; }
 
         /// <summary>
-        /// The date and time the message was created at.
+        ///     The date and time the message was created at.
         /// </summary>
-        [DataType(DataType.DateTime)] public DateTime CreatedAt { get; init; } = DateTime.Now;
+        [DataType(DataType.DateTime)]
+        public DateTime CreatedAt { get; init; } = DateTime.Now;
     }
 }
