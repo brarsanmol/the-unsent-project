@@ -180,6 +180,7 @@ ClientBin/
 *.publishsettings
 orleans.codegen.cs
 *.db
+.DS_Store
 
 /node_modules
 

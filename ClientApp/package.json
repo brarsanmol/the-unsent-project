@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "date-fns": "^2.23.0",
+    "downloadjs": "^1.4.7",
+    "html-to-image": "^1.7.0",
     "merge": "^1.2.1",
     "oidc-client": "^1.9.0",
     "react": "^16.0.0",
