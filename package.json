@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "downloadjs": "^1.4.7",
+    "html-to-image": "^1.7.0"
+  }
+}
